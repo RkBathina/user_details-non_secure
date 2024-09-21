@@ -29,21 +29,21 @@ Changed Exp field to String datatype
 Added GetByID in the controller for bench profiles and daily submissions
 ```mermaid
 sequenceDiagram
-participant SpringApplication
-participant SpringFactoriesLoader
-participant ApplicationContextInitializer
-participant ApplicationListener
-participant EnvironmentPostProcessor
-participant SpringApplicationRunListeners
-participant ConfigurableEnvironment
-participant Banner
-participant ApplicationContext
-participant ClassPathScanningCandidateComponentProvider
-participant AutoConfigurationImportSelector
-participant ConditionEvaluator
-participant ConfigurationClassParser
-participant ConfigurationClassBeanDefinitionReader
-participant BeanFactory
+   participant SpringApplication
+   participant SpringFactoriesLoader
+   participant ApplicationContextInitializer
+   participant ApplicationListener
+   participant EnvironmentPostProcessor
+   participant SpringApplicationRunListeners
+   participant ConfigurableEnvironment
+   participant Banner
+   participant ApplicationContext
+   participant ClassPathScanningCandidateComponentProvider
+   participant AutoConfigurationImportSelector
+   participant ConditionEvaluator
+   participant ConfigurationClassParser
+   participant ConfigurationClassBeanDefinitionReader
+   participant BeanFactory
 
     SpringApplication->>SpringApplication: run()
     SpringApplication->>SpringFactoriesLoader: loadFactories(ApplicationContextInitializer.class)
